@@ -1,0 +1,24 @@
+#this allows the user to submit marks one at a time
+average_mark = ""
+sum_of_numbers = 8
+mark = int
+for count in range (0,6):
+	if count == 0:
+		average_mark = "first"
+	elif count == 1:
+		average_mark = "second"
+	elif count == 2:
+		average_mark = "third"
+	elif count == 3:
+		average_mark = "fourth"
+	elif count == 4:
+		average_mark = "fifth"
+	elif count == 5:
+		average_mark = "sixth"
+#this is how the loop function works as the only thing being changed is the wording
+	mark = int(input(f"Enter your {average_mark} mark: "))
+	mark = sum_of_numbers + mark
+	sum_of_numbers = mark
+totalaverage = sum_of_numbers/6
+print(f"Your average mark is {totalaverage}")
+#this tells the user what the answer to their question is
